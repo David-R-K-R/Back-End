@@ -1,9 +1,14 @@
-package exercise5;
+package exercise6;
 
 public class User {
     private String firstName;
     private String lastName;
     private int age;
+    private Address address;
+
+    public void setAddress(Address address){
+        this.address=address;
+    }
 
     public User(String firstName, String lastName, int age){
         this.firstName = firstName;
@@ -37,7 +42,9 @@ public class User {
         return age;
     }
 
-    public void printOutput(){
-        System.out.printf("%s%s%s%s%s%n", firstName," ", lastName, " ", age);
+    public void printOutput() {
+        System.out.printf("%s %s %d lives in %s %d, %d %s%n",
+                firstName, lastName, age,
+                address.street, address.houseNumber, address.postalCode, address.municipality);
     }
 }
