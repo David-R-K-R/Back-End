@@ -1,5 +1,5 @@
-# Largest Number
+# NullPointerException
 
-Ask the user for two numbers:
-- Print the larger of the two numbers
-- Print equal if the numbers are equal in size
+Write a program that crashes with a `NullPointerException`.
+
+(If you are stuck, a good way to start is to initialise a variable that has a class as type with a null value)

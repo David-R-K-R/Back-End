@@ -1,5 +1,7 @@
-# Counting with Numbers
+# Knock Knock
 
-Create a program that asks the user for three numbers. Use the scanner from the previous exercise to read input.
+Create a class `Door`. You should be able to create objects of this class without passing arguments to a constructor.
 
-Then print the average and the sum.
+Make sure the class has a method `knock()` that prints `Who's there?`.
+
+In your main method, create a door and give it a gentle knock.

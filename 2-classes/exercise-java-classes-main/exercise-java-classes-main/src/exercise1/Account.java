@@ -13,7 +13,7 @@ public class Account {
     public void withdraw(double amount) {
         balance = balance - amount;
 
-        if (balance > 0) {
+        if (balance < 0) {
             balance = 0;
         }
     }

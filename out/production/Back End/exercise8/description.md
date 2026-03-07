@@ -1,7 +1,5 @@
-# Equal words
+# Family tree
 
-Ask the user for two words.
+Complete the methods in the class `Person`.
 
-Then print:
-- "Equal!" if the user entered the same word twice
-- "Not equal!" if the user entered 2 different words
+Experiment with your code in the main method.

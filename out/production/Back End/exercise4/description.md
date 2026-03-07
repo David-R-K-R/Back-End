@@ -1,11 +1,15 @@
-# Temperature Conversion
+# Static Methods
 
-Create a program that requests a temperature in degrees Celsius from the user.
+Consider the given class `Flat`.
 
-Then print the entered temperature in Fahrenheit, in Celsius and in Kelvin.
+Extend the class with the following methods:
+- A method `public boolean largerThan(Flat toCompare)`
+    which returns `true` if the given flat is larger than the flat being compared to
+- A method `public int priceDifference(Flat toCompare)`
+    which returns the price difference between the two flats
 
-The formulas for the conversion are:
-* `T_Fahrenheit = (T_Celsius * 9/5) + 32`
-* `T_Kelvin = T_Celsius + 273.15`
+Now implement the following **static** methods in the `Flat` class:
+- `public static boolean largerThan(Flat f1, Flat f2)`
+- `public static int priceDifference(Flat f1, Flat f2)`
 
-Make sure no information is lost in the calculation! The result must always be a double.
+Try the methods in your main method.
