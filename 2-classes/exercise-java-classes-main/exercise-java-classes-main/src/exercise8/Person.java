@@ -14,16 +14,32 @@ public class Person {
 
     public boolean isSiblingOf(Person person) {
         // Return "true" if this object is the sibling of the person given as a parameter
-        return false;
+        if (person == null || person == this) {
+            return false;
+        }
+        return this.mother != null
+                && this.father != null
+                && this.mother == person.mother
+                && this.father == person.father;
     }
 
     public boolean isGrandparentOf(Person person) {
         // Return "true" if this object is the grandparent of the person given as a parameter
-        return false;
+        if (person == null) {
+            return false;
+        }
+        return isParentOf(person.mother) || isParentOf(person.father);
     }
 
     public boolean isGrandchildOf(Person person) {
         // Return "true" if this object is the grandchild of the person given as a parameter
-        return false;
+        if (person == null) {
+            return false;
+        }
+        return person.isGrandparentOf(this);
+    }
+
+    private boolean isParentOf(Person person) {
+        return person != null && (person.mother == this || person.father == this);
     }
 }
