@@ -1,15 +1,26 @@
 package exercise3;
 
-import exercise1.Person;
-
 public class Application3 {
 
     public static void main(String[] args) {
 
-        Person eddy = new Person("Eddy Merckx", "Binkomstraat 1, 3391 Meensel-Kiezegem");
-        Person tom = new Person("Tom Boonen", "Boonenstraat 15 2560 Mol");
-        System.out.println(eddy);
-        System.out.println(tom);
+        Dog dog = new Dog();
+        dog.bark();
+        dog.eat();
 
+        Dog amaretto = new Dog("Amaretto");
+        amaretto.bark();
+
+        Cat cat = new Cat();
+        cat.meow();
+        cat.eat();
+
+        Cat garfield = new Cat("Garfield");
+        garfield.meow();
+
+        CanMakeSound[] soundMakers = {dog, amaretto, cat, garfield};
+        for (CanMakeSound soundMaker : soundMakers) {
+            soundMaker.createSound();
+        }
     }
 }
